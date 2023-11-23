@@ -1,5 +1,4 @@
 // align.c -- 使用_Alignof和_Alignas(C11)
-//#define __STDC_VERSION__ 201112
 #include <stdio.h>
 
 int main(void)
@@ -20,9 +19,5 @@ int main(void)
     printf("&cb: %p\n",&cb);
     printf("&cz: %p\n",&cz);
 
-
-
-
-    printf("%d %d",_CRT_HAS_C11,__STDC_VERSION__);
     return 0;
 }
