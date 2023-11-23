@@ -2,10 +2,10 @@ cmake_minimum_required(VERSION 3.5)
 
 project(ex16-5 LANGUAGES C)
 
-#message( SEND_ERROR ${CMAKE_C_COMPILER_ID})
-#message( SEND_ERROR ${CMAKE_SYSTEM_NAME})
-if(CMAKE_C_COMPILER_ID MATCHES "GNU")
-    #message( SEND_ERROR ${CMAKE_C_COMPILER})
+message( STATUS ${CMAKE_SYSTEM_NAME} " - " ${CMAKE_C_COMPILER} " - " ${CMAKE_C_COMPILER_ID})
+
+if(CMAKE_C_COMPILER_ID MATCHES "GNU" AND CMAKE_SYSTEM_NAME MATCHES "Linux")
+    message( STATUS ${CMAKE_C_COMPILER} " - linking librarie libm.so")
     link_libraries(m)
 endif()
 
