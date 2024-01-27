@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(ex2-3 LANGUAGES C)
+project(ex1-2 LANGUAGES C)
 
-add_executable(ex2-3
-    two_func.c)
+add_executable(ex1-2
+    1.2.c)
 
 include(GNUInstallDirs)
-install(TARGETS ex2-3
+install(TARGETS ex1-2
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )

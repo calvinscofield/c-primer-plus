@@ -2,7 +2,8 @@ cmake_minimum_required(VERSION 3.5)
 
 project(ex2-1 LANGUAGES C)
 
-add_executable(ex2-1 main.c)
+add_executable(ex2-1
+    first.c)
 
 include(GNUInstallDirs)
 install(TARGETS ex2-1
