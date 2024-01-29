@@ -2,7 +2,8 @@ cmake_minimum_required(VERSION 3.5)
 
 project(ex4-7 LANGUAGES C)
 
-add_executable(ex4-7 main.c)
+add_executable(ex4-7
+    width.c)
 
 include(GNUInstallDirs)
 install(TARGETS ex4-7

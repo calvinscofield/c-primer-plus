@@ -2,7 +2,8 @@ cmake_minimum_required(VERSION 3.5)
 
 project(ex4-1 LANGUAGES C)
 
-add_executable(ex4-1 main.c)
+add_executable(ex4-1
+    talkback.c)
 
 include(GNUInstallDirs)
 install(TARGETS ex4-1
