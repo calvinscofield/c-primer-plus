@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.5)
 
 project(ex6-18 LANGUAGES C)
 
-add_executable(ex6-18 main.c)
+add_executable(ex6-18 rows2.c)
 
 include(GNUInstallDirs)
 install(TARGETS ex6-18

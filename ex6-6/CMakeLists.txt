@@ -2,7 +2,8 @@ cmake_minimum_required(VERSION 3.5)
 
 project(ex6-6 LANGUAGES C)
 
-add_executable(ex6-6 main.c)
+add_executable(ex6-6
+    t_and_f.c)
 
 include(GNUInstallDirs)
 install(TARGETS ex6-6
