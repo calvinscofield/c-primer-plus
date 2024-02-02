@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.5)
 
 project(ex7-1 LANGUAGES C)
 
-add_executable(ex7-1 main.c)
+add_executable(ex7-1 colddays.c)
 
 include(GNUInstallDirs)
 install(TARGETS ex7-1
