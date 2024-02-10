@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.5)
 
 project(ex10-11 LANGUAGES C)
 
-add_executable(ex10-11 main.c)
+add_executable(ex10-11 sum_arr2.c)
 
 include(GNUInstallDirs)
 install(TARGETS ex10-11

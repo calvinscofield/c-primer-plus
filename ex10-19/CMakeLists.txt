@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.5)
 
 project(ex10-19 LANGUAGES C)
 
-add_executable(ex10-19 main.c)
+add_executable(ex10-19 flc.c)
 
 include(GNUInstallDirs)
 install(TARGETS ex10-19
