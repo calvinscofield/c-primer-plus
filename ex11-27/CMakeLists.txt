@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.5)
 
 project(ex11-27 LANGUAGES C)
 
-add_executable(ex11-27 main.c)
+add_executable(ex11-27 copy3.c)
 
 include(GNUInstallDirs)
 install(TARGETS ex11-27
