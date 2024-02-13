@@ -1,21 +1,22 @@
+/* global.c -- 使用外部变量 */
 #include <stdio.h>
-int units=0;
+int units = 0; /* 外部变量 */
 void critic(void);
-
-int main()
+int main(void)
 {
-    extern int units;
+    extern int units; /* 可选的重复声明 */
 
     printf("How many pounds to firkin of butter?\n");
-    scanf("%d",&units);
-    while(units!=56)
+    scanf("%d", &units);
+    while (units != 56)
         critic();
     printf("You must have looked it up!\n");
+
     return 0;
 }
 
 void critic(void)
 {
     printf("No luck, my friend. Try again.\n");
-    scanf("%d",&units);
+    scanf("%d", &units);
 }
