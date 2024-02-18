@@ -9,24 +9,23 @@ struct funds{
     double savefund;
 };
 
-double sum(double,double);
+double sum(double, double);
 
 int main(void)
 {
-    struct funds stan={
+    struct funds stan = {
         "Garlic-Melon Bank",
         4032.27,
         "Lucky's Savings and Loan",
         8543.94
     };
 
-    printf("Stan has a total of $%.2f.\n",
-           sum(stan.bankfund,stan.savefund));
+    printf("Stan has a total of $%.2f.\n", sum(stan.bankfund, stan.savefund));
     return 0;
 }
 
 /* 两个double类型的数相加 */
-double sum(double x,double y)
+double sum(double x, double y)
 {
-    return x+y;
+    return x + y;
 }
