@@ -1,4 +1,5 @@
-// align.c -- 使用_Alignof和_Alignas(C11)
+// align.c -- 使用 _Alignof 和 _Alignas (C11)
+
 #include <stdio.h>
 int main(void)
 {
@@ -9,14 +10,14 @@ int main(void)
     char cb;
     char _Alignas(double) cz;
 
-    printf("char alignment: %zd\n",_Alignof(char));
-    printf("double alignment: %zd\n",_Alignof(double));
-    printf("&dx: %p\n",&dx);
-    printf("&ca: %p\n",&ca);
-    printf("&cx: %p\n",&cx);
-    printf("&dz: %p\n",&dz);
-    printf("&cb: %p\n",&cb);
-    printf("&cz: %p\n",&cz);
+    printf("char alignment:   %zd\n", _Alignof(char));
+    printf("double alignment: %zd\n", _Alignof(double));
+    printf("&dx: %p\n", &dx);
+    printf("&ca: %p\n", &ca);
+    printf("&cx: %p\n", &cx);
+    printf("&dz: %p\n", &dz);
+    printf("&cb: %p\n", &cb);
+    printf("&cz: %p\n", &cz);
 
     return 0;
 }
