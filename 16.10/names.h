@@ -1,4 +1,4 @@
-// names.h -- 修订后的names_st头文件，避免重复包含
+// names.h -- 修订后的 names_st 头文件，避免重复包含
 
 #ifndef NAMES_H_
 #define NAMES_H_
@@ -19,6 +19,6 @@ typedef struct names_st names;
 // 函数原型
 void get_names(names *);
 void show_names(const names *);
-char *s_gets(char *st,int n);
+char *s_gets(char *st, int n);
 
 #endif

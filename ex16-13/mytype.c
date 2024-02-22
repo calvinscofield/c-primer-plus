@@ -1,4 +1,5 @@
 // mytype.c
+
 #include <stdio.h>
 
 #define MYTYPE(X) _Generic((X),\
@@ -10,11 +11,11 @@
 
 int main(void)
 {
-    int d=5;
+    int d = 5;
 
-    printf("%s\n",MYTYPE(d)); // d是int类型
-    printf("%s\n",MYTYPE(2.0*d)); // 2.0*d是double类型
-    printf("%s\n",MYTYPE(3L)); // 3L是long类型
-    printf("%s\n",MYTYPE(&d)); // &d的类型是int *
+    printf("%s\n", MYTYPE(d)); // d是int类型
+    printf("%s\n", MYTYPE(2.0*d)); // 2.0 * d 是 double 类型
+    printf("%s\n", MYTYPE(3L)); // 3L 是 long 类型
+    printf("%s\n", MYTYPE(&d)); // &d的类型是 int *
     return 0;
 }
