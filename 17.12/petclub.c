@@ -1,4 +1,4 @@
-/* petclub.c -- 使用二叉查找数 */
+/* petclub.c -- 使用二叉查找树 */
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
@@ -48,9 +48,9 @@ char menu(void)
 
     puts("Nerfville Pet Club Membership Program");
     puts("Enter the letter corresponding to your choice:");
-    puts("a) add a pet l) show list of pets");
-    puts("n) number of pets f) find pets");
-    puts("d) delete a pet q) quit");
+    puts("a) add a pet       l) show list of pets");
+    puts("n) number of pets  f) find pets");
+    puts("d) delete a pet    q) quit");
     while ((ch = getchar()) != EOF)
     {
         while (getchar() != '\n') /* 处理输入行的剩余内容 */
@@ -61,7 +61,7 @@ char menu(void)
         else
             break;
     }
-    if (ch == EOF) /* 使程序推出 */
+    if (ch == EOF) /* 使程序退出 */
         ch = 'q';
 
     return ch;
@@ -162,7 +162,7 @@ char *s_gets(char *st, int n)
     if (ret_val)
     {
         find = strchr(st, '\n'); // 查找换行符
-        if (find) // 如果地址不是NULL，
+        if (find) // 如果地址不是 NULL，
             *find = '\0'; // 在此处放置一个空字符
         else
             while (getchar() != '\n')

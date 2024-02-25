@@ -1,7 +1,7 @@
-/* use_q.c -- 驱动程序测试Queue接口 */
-/* 与queue.c一起编译 */
+/* use_q.c -- 驱动程序测试 Queue 接口 */
+/* 与 queue.c一起编译 */
 #include <stdio.h>
-#include "queue.h" /* 定义Queue、Item */
+#include "queue.h" /* 定义 Queue、Item */
 
 int main(void)
 {
@@ -16,6 +16,7 @@ int main(void)
     {
         if (ch != 'a' && ch != 'd') /* 忽略其他输出 */
             continue;
+
         if (ch == 'a')
         {
             printf("Integer to add: ");

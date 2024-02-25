@@ -1,9 +1,9 @@
-// mall.c -- 使用Queue接口
-// 和queue.c一起编译
+// mall.c -- 使用 Queue 接口
+// 和 queue.c 一起编译
 #include <stdio.h>
-#include <stdlib.h> // 提供rand()和srand()的原型
-#include <time.h> // 提供time()的原型
-#include "queue.h" // 更改Item的typedef
+#include <stdlib.h> // 提供 rand() 和 srand() 的原型
+#include <time.h> // 提供 time() 的原型
+#include "queue.h" // 更改 Item 的 typedef
 #define MIN_PER_HR 60.0
 
 bool newcustomer(double x); // 是否有新顾客到来？
@@ -18,14 +18,14 @@ int main(void)
     long cycle, cyclelimit; // 循环计数器、计数器的上限
     long turnaways = 0; // 因队列已满被拒的顾客数量
     long customers = 0; // 加入队列的顾客数量
-    long served = 0; // 在模拟期间咨询过Sigmund的顾客数量
+    long served = 0; // 在模拟期间咨询过 Sigmund 的顾客数量
     long sum_line = 0; // 累计的队列总长
-    int wait_time = 0; // 从当前到Sigmund空闲所需的时间
+    int wait_time = 0; // 从当前到 Sigmund 空闲所需的时间
     double min_per_cust; // 顾客到来的平均时间
     long line_wait = 0; // 队列累计的等待时间
 
     InitializeQueue(&line);
-    srand((unsigned int)time(0)); // rand()随机初始化
+    srand((unsigned int)time(0)); // rand() 随机初始化
     puts("Case Study: Sigmund Lander's Advice Booth");
     puts("Enter the number of simulation hours:");
     scanf("%d", &hours);
@@ -62,8 +62,8 @@ int main(void)
     if (customers > 0)
     {
         printf("customers accepted: %ld\n", customers);
-        printf(" customers served: %ld\n", served);
-        printf("  turnaways: %ld\n", turnaways);
+        printf("  customers served: %ld\n", served);
+        printf("         turnaways: %ld\n", turnaways);
         printf("average queue size: %.2f\n",
                (double)sum_line / cyclelimit);
         printf(" average wait time: %.2f minutes\n",

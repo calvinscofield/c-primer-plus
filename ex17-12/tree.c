@@ -225,14 +225,14 @@ static Pair SeekItem(const Item *pi, const Tree *ptree)
             look.child = look.child->right;
         }
         else /* 如果前两种情况都不满足，则必定是相等的情况 */
-            break; /* look.child目标项的节点 */
+            break; /* look.child 目标项的节点 */
     }
 
     return look; /* 成功返回 */
 }
 
 static void DeleteNode(Trnode **ptr)
-/* ptr是指向目标节点的父节点指针成员的地址 */
+/* ptr 是指向目标节点的父节点指针成员的地址 */
 {
     Trnode *temp;
 

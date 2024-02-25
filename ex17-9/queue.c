@@ -65,6 +65,7 @@ bool DeQueue(Item *pitem, Queue *pq)
     pq->items--;
     if (pq->items == 0)
         pq->rear = NULL;
+
     return true;
 }
 
@@ -77,6 +78,7 @@ void EmptyTheQueue(Queue *pq)
 }
 
 /* 局部函数 */
+
 static void CopyToNode(Item item, Node *pn)
 {
     pn->item = item;

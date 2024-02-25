@@ -1,5 +1,5 @@
 /* films3.c -- 使用抽象数据类型（ADT）风格的链表 */
-/* 与list.c一起编译 */
+/* 与 list.c一起编译 */
 #include <stdio.h>
 #include <stdlib.h> /* 提供exit()的原型 */
 #include <string.h>
@@ -23,7 +23,7 @@ int main(void)
     puts("Enter first movie title:");
     while (s_gets(temp.title, TSIZE) != NULL && temp.title[0] != '\0')
     {
-        puts("Enter your rating <0-10>");
+        puts("Enter your rating <0-10>:");
         scanf("%d", &temp.rating);
         while (getchar() != '\n')
             continue;

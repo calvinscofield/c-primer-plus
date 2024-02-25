@@ -1,7 +1,7 @@
 /* films2.c -- 使用结构链表 */
 #include <stdio.h>
-#include <stdlib.h> /* 提供 malloc()原型 */
-#include <string.h> /* 提供strcpy()原型 */
+#include <stdlib.h> /* 提供 malloc() 原型 */
+#include <string.h> /* 提供 strcpy() 原型 */
 #define TSIZE 45 /* 储存片名的数组大小 */
 
 struct film {
@@ -9,7 +9,7 @@ struct film {
     int rating;
     struct film *next; /* 指向链表中的下一个结构 */
 };
-char * s_gets(char *st, int n);
+char *s_gets(char *st, int n);
 
 int main(void)
 {
@@ -38,7 +38,7 @@ int main(void)
 
     /* 显示电影列表 */
     if (head == NULL)
-        printf("No data entered.");
+        printf("No data entered. ");
     else
         printf("Here is the movie list:\n");
     current = head;
@@ -57,11 +57,12 @@ int main(void)
         free(current);
     }
     printf("Bye!\n");
+
     return 0;
 }
 
 
-char * s_gets(char *st, int n)
+char *s_gets(char *st, int n)
 {
     char *ret_val;
     char *find;
